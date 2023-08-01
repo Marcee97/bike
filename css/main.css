@@ -138,22 +138,23 @@ body {
   color: #fff;
 }
 
-@media (max-width: 480px) {
-  .carrousel .grande {
-    width: 300%;
-    display: flex;
-    flex-flow: row nowrap;
-    justify-content: space-between;
-    align-items: center;
-    transition: 0.5s all ease-in-out;
-    overflow: hidden;
-  }
-  .carrousel .img {
-    width: 100%;
-  }
-  .desplazar {
-    transform: translateX(-33.3%);
-  }
+.carrousel .grande {
+  width: 300%;
+  display: flex;
+  flex-flow: row nowrap;
+  justify-content: space-between;
+  align-items: center;
+  transition: 0.5s all ease-in-out;
+  overflow: hidden;
+}
+
+.carrousel .img {
+  width: 100%;
+  object-fit: cover;
+}
+
+.desplazar {
+  transform: translateX(-33.3%);
 }
 
 /*# sourceMappingURL=main.css.map */
