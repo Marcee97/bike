@@ -139,13 +139,7 @@ body{
     opacity: 1;
     
 }
-// @keyframes transparencia{
-//     0%{
-//         opacity: 1;}
-//     100%{
-//         opacity: 0;
-//     }    
-// }
+
 .menu-visible-ul{
     display: flex;
     width: 100%;
@@ -162,7 +156,7 @@ body{
 }
 
 
-
+@media (max-width: 480px){
 .carrousel .grande{
     width: 300%;
     display: flex;
@@ -183,7 +177,7 @@ body{
 }
 
 
-
+}
    
     
   
