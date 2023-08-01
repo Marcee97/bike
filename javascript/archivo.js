@@ -4,12 +4,26 @@ const botonCerrar          = document.querySelector('.btn-cerrar');
 const contenedorImagenes   = document.querySelector('.grande');
 const menuDesplegable      = document.querySelector('.nav');
 const titulo               = document.querySelector('.titulo');
+const menuVisible          = document.querySelector('.menu-visible');
 
 
 menu.addEventListener('click',()=>{
     menuDesplegable.classList.toggle('activo');
-    titulo.classList.toggle('none')
+    titulo.classList.toggle('none');
+    menu.classList.toggle('none');
+    botonCerrar.classList.toggle('block');
+    menuVisible.classList.toggle('animacion')
 
+
+})
+
+
+botonCerrar.addEventListener('click',()=>{
+    menuDesplegable.classList.remove('activo');
+    botonCerrar.classList.remove('block');
+    titulo.classList.toggle('none');
+    menu.classList.toggle('none');
+    menuVisible.classList.toggle('animacion')
 })
 
 
@@ -17,18 +31,18 @@ menu.addEventListener('click',()=>{
     
 
 
-// let index = 1;
-// let cantidadDeImagenes = document.querySelectorAll('.img');
+let index = 1;
+let cantidadDeImagenes = document.querySelectorAll('.img');
 
-// setInterval(function () {
-//     let porcentaje = index * -33.3;
-//     contenedorImagenes.style.transform = "translateX("+ porcentaje +"%)";
-//     index++;
+setInterval(function () {
+    let porcentaje = index * -33.3;
+    contenedorImagenes.style.transform = "translateX("+ porcentaje +"%)";
+    index++;
 
-//     if(cantidadDeImagenes.length == index){
-//         index = 0
-//     }
-// },3000)
+    if(cantidadDeImagenes.length == index){
+        index = 0
+    }
+},9000)
 
 
 
