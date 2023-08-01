@@ -151,6 +151,7 @@ body {
 
 .carrousel .img {
   width: 33.3333333333%;
+  min-height: 10vh;
 }
 
 .desplazar {
