@@ -146,11 +146,11 @@ body {
   align-items: center;
   transition: 0.5s all ease-in-out;
   overflow: hidden;
+  object-fit: contain;
 }
 
 .carrousel .img {
-  width: 100%;
-  object-fit: cover;
+  width: 33.3333333333%;
 }
 
 .desplazar {
