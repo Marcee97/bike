@@ -4,7 +4,7 @@
   box-sizing: border-box;
 }
 
-body {
+.body {
   overflow: hidden;
 }
 
@@ -136,6 +136,10 @@ body {
 .menu-visible-ul a {
   text-decoration: none;
   color: #fff;
+}
+
+.carrousel {
+  overflow: hidden;
 }
 
 .carrousel .grande {
