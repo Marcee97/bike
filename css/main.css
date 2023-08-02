@@ -8,6 +8,12 @@
   overflow: hidden;
 }
 
+.titulo {
+  color: #dbd9d9;
+  font-family: monospace;
+  font-size: 1.5em;
+}
+
 .header {
   width: 100%;
   background: #161617;
@@ -27,6 +33,7 @@
   align-items: start;
   position: relative;
   padding: 0px 0px 0px 40px;
+  font-size: 1.1em;
 }
 
 .header .nav.activo {
@@ -43,13 +50,13 @@
   font-family: sans-serif;
   height: 3.1em;
   padding: 9px;
-}
-.cabecera h1 {
-  font-size: 1.7em;
+  width: 65%;
 }
 
 .btn-cerrar {
   position: absolute;
+  top: 9px;
+  left: 12px;
   font-size: 1.9rem;
   background-color: transparent;
   border: none;
@@ -117,7 +124,7 @@
   align-items: center;
   width: 100%;
   background-color: rgba(0, 0, 0, 0.664);
-  height: 3em;
+  height: 15.9em;
   position: relative;
   z-index: 25;
   font-family: monospace;
@@ -160,6 +167,48 @@
 
 .desplazar {
   transform: translateX(-33.3%);
+}
+
+.cortina-negra {
+  width: 100%;
+  height: 16.7em;
+  background: rgba(0, 0, 0, 0.5);
+  position: relative;
+  z-index: 12;
+  margin-top: 0.3em;
+}
+
+.catalogo {
+  background-color: #000;
+}
+
+.contenedor-catalogo img {
+  width: 100%;
+}
+
+.prueba-titulo {
+  font-family: monospace;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+}
+
+.rotado {
+  position: absolute;
+  left: -1.2em;
+  font-size: 1.7em;
+  top: 0.5em;
+  rotate: -90deg;
+  color: #4e4d4d;
+}
+
+.cuarto {
+  color: #666363;
+}
+
+.bike {
+  color: #e7e3e3;
 }
 
 /*# sourceMappingURL=main.css.map */
