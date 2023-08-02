@@ -3,10 +3,22 @@ const menu                  = document.querySelector('.btn-menu');
 const botonCerrar           = document.querySelector('.btn-cerrar');
 const contenedorImagenes    = document.querySelector('.grande');
 const menuDesplegable       = document.querySelector('.nav');
+const botonUp               = document.querySelector('.btn-up');
+const carrousel             = document.querySelector('.carrousel');
+const titulo                = document.querySelector('.prueba-titulo');
 
 
-const botonAccesorios       = document.querySelector('.btn-accesorios');
-const accesoriosDesplegable = document.querySelector('.desplegable-accesorios')
+
+let vigia = false
+botonUp.addEventListener('click',()=>{
+    carrousel.classList.toggle('up');
+    titulo.classList.toggle('visibilidad')
+    vigia = true
+    menu.classList.toggle('visibilidad')
+})
+
+
+
 
 
 menu.addEventListener('click',()=>{
@@ -32,17 +44,19 @@ botonCerrar.addEventListener('click',()=>{
     
     
 
-
+let intervaloId;
 let index = 1;
 let cantidadDeImagenes = document.querySelectorAll('.img');
 
-setInterval(function () {
+intervaloId = setInterval(function () {
     let porcentaje = index * -33.3;
     contenedorImagenes.style.transform = "translateX("+ porcentaje +"%)";
     index++;
 
     if(cantidadDeImagenes.length == index){
         index = 0
+    }else if(vigia == true){
+        clearInterval(intervaloId)
     }
 },9000)
 
