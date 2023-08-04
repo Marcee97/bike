@@ -12,9 +12,9 @@ const titulo                = document.querySelector('.prueba-titulo');
 let vigia = false
 botonUp.addEventListener('click',()=>{
     carrousel.classList.toggle('up');
-    titulo.classList.toggle('visibilidad')
+    
     vigia = true
-    menu.classList.toggle('visibilidad')
+    
 })
 
 
@@ -26,9 +26,6 @@ menu.addEventListener('click',()=>{
     menu.classList.toggle('none');
     botonCerrar.classList.toggle('block');
     
-   
-
-
 })
 
 
@@ -62,22 +59,6 @@ intervaloId = setInterval(function () {
 
 
 
-
-
-
-// function desplazar() {
-//   contenedorImagenes.style.transform = 'translateX(-33.3%)';
-  
-//   cantidadRepeticiones--;
-  
-//   if (cantidadRepeticiones > 0) {
-//     // Si quedan repeticiones, llamar a setTimeout para repetir el desplazamiento
-//     setTimeout(desplazar, 3000);
-//   }
-// }
-
-// // Iniciar el desplazamiento
-// desplazar();
 
 
 

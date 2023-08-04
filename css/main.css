@@ -1,11 +1,8 @@
+@charset "UTF-8";
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-}
-
-.body {
-  overflow: hidden;
 }
 
 .titulo {
@@ -18,10 +15,12 @@
   width: 100%;
   background: #161617;
   height: 3.4rem;
+  position: fixed;
 }
 
 .btn-menu {
-  opacity: 0;
+  opacity: 1;
+  cursor: pointer;
 }
 
 .header .nav {
@@ -152,6 +151,7 @@
   align-items: center;
   transition: 0.5s all ease-in-out;
   overflow: hidden;
+  z-index: 220;
   position: relative;
 }
 
@@ -188,7 +188,7 @@
   justify-content: center;
   align-items: center;
   position: relative;
-  opacity: 0;
+  opacity: 1;
   transition: 0.6s all ease;
 }
 
@@ -206,12 +206,11 @@
   background: rgba(0, 0, 0, 0.5);
   color: #fff;
   height: 100vh;
-  z-index: 222;
+  z-index: 223;
 }
 
 .titulo-portada {
   font-family: monospace;
-  z-index: 222;
   background: rgba(255, 255, 255, 0.45);
   border-radius: 25px;
   width: 8em;
@@ -222,6 +221,7 @@
   justify-content: center;
   align-items: start;
   transition: 1s all ease;
+  z-index: 230;
 }
 
 .rotado-portada {
@@ -242,52 +242,131 @@
   color: rgb(238, 233, 233);
 }
 
+.catalogoo {
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  margin-top: 5px;
+  background: linear-gradient(to bottom, #ffffff, #000000, #000000);
+  margin-top: 0px;
+}
+
 .contenedor-botones {
   display: flex;
-  width: 100%;
-  height: 300px;
   flex-direction: column;
-  justify-content: end;
+  width: 100%;
+  justify-content: start;
+}
+
+.boton-mtb {
+  display: flex;
+  justify-content: center;
   align-items: center;
-}
-.contenedor-botones h3 {
-  text-align: center;
-}
-
-.btn-rojo {
-  width: 12em;
-  height: 5em;
-  background-color: rgb(255, 0, 0);
   border: none;
-  border-radius: 55px;
-  color: #000;
-  padding: 9px;
-  font-size: 1.5em;
-  font-size: 1.5em;
-  animation-name: botonera;
-  animation-duration: 0.6s;
-  animation-timing-function: ease;
-  animation-iteration-count: infinite;
-  animation-direction: alternate;
+  width: 98%;
+  height: 6em;
+  font-size: 2em;
+  background-image: url(https://venzoargentina.com.ar/wp-content/uploads/2020/09/mtb.jpg?id=1699);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  overflow: hidden;
+  transition: 0.3s all ease;
+  border-radius: 7px;
+  margin: 3px;
+  background-image: url(https://venzoargentina.com.ar/wp-content/uploads/2020/09/mtb.jpg?id=1699);
+}
+.boton-mtb:hover {
+  transform: scale(1.02);
 }
 
-@keyframes botonera {
-  0% {
-    background: rgb(255, 0, 0);
-  }
-  25% {
-    background: rgb(218, 35, 35);
-  }
-  50% {
-    background: rgb(139, 80, 80);
-  }
-  75% {
-    background: rgb(48, 22, 22);
-  }
-  100% {
-    background: rgb(2, 1, 1);
-    color: #fff;
-  }
+.boton-niños {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border: none;
+  width: 98%;
+  height: 6em;
+  font-size: 2em;
+  background-image: url(https://venzoargentina.com.ar/wp-content/uploads/2020/09/mtb.jpg?id=1699);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  overflow: hidden;
+  transition: 0.3s all ease;
+  border-radius: 7px;
+  margin: 3px;
+  background-image: url(https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRRln9YZ1gfyNijLy2qWAYvkLif8qJ1OxIbfw&usqp=CAU);
+}
+.boton-niños:hover {
+  transform: scale(1.02);
+}
+
+.boton-accesorios {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border: none;
+  width: 98%;
+  height: 6em;
+  font-size: 2em;
+  background-image: url(https://venzoargentina.com.ar/wp-content/uploads/2020/09/mtb.jpg?id=1699);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  overflow: hidden;
+  transition: 0.3s all ease;
+  border-radius: 7px;
+  margin: 3px;
+  background-image: url(https://images.pexels.com/photos/5465176/pexels-photo-5465176.jpeg?auto=compress&cs=tinysrgb&w=1600);
+}
+.boton-accesorios:hover {
+  transform: scale(1.02);
+}
+
+.boton-texto-catalogo {
+  position: absolute;
+  border: none;
+  width: 5em;
+  height: 3em;
+  font-size: 0.9em;
+  background: transparent;
+  z-index: 0;
+  color: #fff;
+}
+
+.cortina-negra {
+  width: 100%;
+  height: 100%;
+  position: relative;
+  background: rgba(0, 0, 0, 0.3);
+}
+
+.seccion-dos-catalogo {
+  background: linear-gradient(to bottom, #000000, #000000, #000000);
+}
+
+.contenedor-segunda-seccion {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  color: #fff;
+  font-family: monospace;
+}
+.contenedor-segunda-seccion h2 {
+  font-size: 3em;
+  font-family: monospace;
+}
+.contenedor-segunda-seccion img {
+  width: 100%;
+}
+.contenedor-segunda-seccion button {
+  background: transparent;
+  border: 1px solid #fff;
+  color: #fff;
+  padding: 0.7em;
 }
 
 /*# sourceMappingURL=main.css.map */
