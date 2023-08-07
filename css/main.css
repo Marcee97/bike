@@ -16,6 +16,7 @@
   background: #161617;
   height: 3.4rem;
   position: fixed;
+  z-index: 100;
 }
 
 .btn-menu {
@@ -249,7 +250,7 @@
   justify-content: center;
   margin-top: 5px;
   background: linear-gradient(to bottom, #ffffff, #000000, #000000);
-  margin-top: 0px;
+  margin-top: 0;
 }
 
 .contenedor-botones {
@@ -257,6 +258,7 @@
   flex-direction: column;
   width: 100%;
   justify-content: start;
+  margin-top: 3.3em;
 }
 
 .boton-mtb {
@@ -345,6 +347,7 @@
 
 .seccion-dos-catalogo {
   background: linear-gradient(to bottom, #000000, #000000, #000000);
+  padding: 0 0 2em 0;
 }
 
 .contenedor-segunda-seccion {
@@ -358,6 +361,7 @@
 .contenedor-segunda-seccion h2 {
   font-size: 3em;
   font-family: monospace;
+  margin-top: -1em;
 }
 .contenedor-segunda-seccion img {
   width: 100%;
@@ -367,6 +371,19 @@
   border: 1px solid #fff;
   color: #fff;
   padding: 0.7em;
+}
+.contenedor-segunda-seccion button:hover {
+  background: rgba(255, 255, 255, 0.27);
+}
+
+.display-none {
+  display: none;
+}
+
+.footer {
+  height: 200px;
+  width: 100%;
+  background: linear-gradient(to bottom, #ffffff, #000000);
 }
 
 /*# sourceMappingURL=main.css.map */

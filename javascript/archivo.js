@@ -6,20 +6,21 @@ const menuDesplegable       = document.querySelector('.nav');
 const botonUp               = document.querySelector('.btn-up');
 const carrousel             = document.querySelector('.carrousel');
 const titulo                = document.querySelector('.prueba-titulo');
+const seccionCatalogo       = document.querySelector('.seccion-dos-catalogo');
+const footer                = document.querySelector('.footer');
+
 
 
 
 let vigia = false
 botonUp.addEventListener('click',()=>{
     carrousel.classList.toggle('up');
-    
     vigia = true
+    seccionCatalogo.classList.toggle('display-none');
+    footer.classList.toggle('display-none');
+    
     
 })
-
-
-
-
 
 menu.addEventListener('click',()=>{
     menuDesplegable.classList.toggle('activo');
@@ -36,10 +37,6 @@ botonCerrar.addEventListener('click',()=>{
    
   
 })
-
-
-    
-    
 
 let intervaloId;
 let index = 1;
