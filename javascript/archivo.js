@@ -7,7 +7,10 @@ const botonUp               = document.querySelector('.btn-up');
 const carrousel             = document.querySelector('.carrousel');
 const titulo                = document.querySelector('.prueba-titulo');
 const seccionCatalogo       = document.querySelector('.seccion-dos-catalogo');
+const btnVerMasSeccion      = Array.from(document.querySelectorAll('.boton-seccion-venzo'));
+const btnVerMasContenido    = Array.from(document.querySelectorAll('.contenido-btn-vermas'));
 const footer                = document.querySelector('.footer');
+
 
 
 
@@ -38,6 +41,15 @@ botonCerrar.addEventListener('click',()=>{
   
 })
 
+btnVerMasSeccion[0].addEventListener('click',()=>{
+   
+    btnVerMasContenido[0].classList.toggle('transform-contenidovermas')
+})
+
+btnVerMasSeccion[1].addEventListener('click',()=>{
+    btnVerMasContenido[1].classList.toggle('transform-contenidovermas')
+})
+
 let intervaloId;
 let index = 1;
 let cantidadDeImagenes = document.querySelectorAll('.img');
@@ -53,6 +65,9 @@ intervaloId = setInterval(function () {
         clearInterval(intervaloId)
     }
 },9000)
+
+
+
 
 
 

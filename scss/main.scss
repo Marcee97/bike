@@ -1,7 +1,6 @@
 @import "reset/resets";
 @import "./mixins/mixins";
 
-
 .titulo {
   color: #dbd9d9;
   font-family: monospace;
@@ -247,9 +246,8 @@
   display: flex;
   justify-content: center;
   margin-top: 5px;
-  background: linear-gradient(to bottom,#ffffff,#000000,#000000);
+  background: linear-gradient(to bottom, #ffffff, #000000, #000000);
   margin-top: 0;
-  
 }
 
 .contenedor-botones {
@@ -265,32 +263,25 @@
   background-image: url(https://venzoargentina.com.ar/wp-content/uploads/2020/09/mtb.jpg?id=1699);
 }
 
-
-.boton-niños{
-    @include btn;
-    background-image: url(https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRRln9YZ1gfyNijLy2qWAYvkLif8qJ1OxIbfw&usqp=CAU);
-
-    
+.boton-niños {
+  @include btn;
+  background-image: url(https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRRln9YZ1gfyNijLy2qWAYvkLif8qJ1OxIbfw&usqp=CAU);
 }
 
-.boton-accesorios{
-    @include btn;
-    background-image: url(https://images.pexels.com/photos/5465176/pexels-photo-5465176.jpeg?auto=compress&cs=tinysrgb&w=1600);
+.boton-accesorios {
+  @include btn;
+  background-image: url(https://images.pexels.com/photos/5465176/pexels-photo-5465176.jpeg?auto=compress&cs=tinysrgb&w=1600);
 }
 
-
-  
-
-.boton-texto-catalogo{
-    position: absolute;
-    border: none;
-    width: 5em;
-    height: 3em;
-    font-size: 0.9em;
-    background: transparent;
-    z-index: 0;
-    color: #fff;
-    
+.boton-texto-catalogo {
+  position: absolute;
+  border: none;
+  width: 5em;
+  height: 3em;
+  font-size: 0.9em;
+  background: transparent;
+  z-index: 0;
+  color: #fff;
 }
 
 .cortina-negra {
@@ -300,49 +291,117 @@
   background: rgba($color: #000000, $alpha: 0.3);
 }
 
-.seccion-dos-catalogo{
-    background: linear-gradient(to bottom,#000000,#000000,#000000);
-    padding: 0 0 2em 0
+.seccion-dos-catalogo {
+  background: linear-gradient(to bottom, #000000, #000000, #000000);
+  padding: 0 0 2em 0;
 }
 
-.contenedor-segunda-seccion{
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    color: #fff;
+.contenedor-segunda-seccion {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  color: #fff;
+  font-family: monospace;
+  h2 {
+    font-size: 3em;
     font-family: monospace;
+    margin-top: -1em;
+  }
 
-    h2{
-        font-size: 3em;
-        font-family: monospace;
-        margin-top: -1em;
-    }
-    
-    img{
-        width: 100%;
+  img {
+    width: 100%;
+  }
 
+  button {
+    background: transparent;
+    border: 1px solid #fff;
+    color: #fff;
+    padding: 0.7em;
+    &:hover {
+      background: rgba($color: #ffffff, $alpha: 0.27);
     }
-
-    button{
-        background: transparent;
-        border: 1px solid #fff;
-        color: #fff;
-        padding: .7em;
-        &:hover{
-            background: rgba($color: #ffffff, $alpha: 0.270);
-           
-        }
-    }
+  }
 }
 
-.display-none{
+.detalles-bici-venzo {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  align-items: center;
+
+  overflow: hidden;
+  position: relative;
+}
+
+.contenido-btn-vermas {
+  width: 100%;
+  padding: 2.5em;
+  position: absolute;
+  color: #ffffff;
+  font-family: monospace;
+  font-size: 1.251em;
+  background: rgba($color: #ffffff, $alpha: 0.15);
+  color: #ffffff;
+  transition: 0.4s all ease;
+  transform: translateY(116%);
+
+  h2 {
+    font-size: 1.8em;
+    margin: 5px;
+    text-shadow: 2px 4px 1px (#000000);
+  }
+  h3 {
+    margin: 5px;
+    text-shadow: 2px 2px 1px (#000000);
+  }
+}
+
+.transform-contenidovermas {
+  transform: translateY(0%);
+}
+
+.display-none {
   display: none;
 }
 
-.footer{
-  height: 200px;
+.seccion-tres {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
   width: 100%;
-  background:linear-gradient(to bottom,#ffffff,#000000);
+  align-items: center;
+ 
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 400px;
+  color: #ffffff;
+  text-align: center;
+  
   
 }
+
+.contenedor-seccion-tres{
+  
+  height: 100%;
+  display: flex;
+  align-items: start;
+  padding: 1em;
+  background-image: url(https://images.pexels.com/photos/210095/pexels-photo-210095.jpeg?auto=compress&cs=tinysrgb&w=1600);
+  background-repeat: no-repeat;
+  background-size: cover;
+
+  h3{
+    font-family: monospace;
+    font-weight: 800;
+    font-size: 2.5em;
+  }
+}
+
+.footer {
+  height: 200px;
+  width: 100%;
+  background: #000000;
+}
+
+

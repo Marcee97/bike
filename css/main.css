@@ -376,14 +376,77 @@
   background: rgba(255, 255, 255, 0.27);
 }
 
+.detalles-bici-venzo {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  align-items: center;
+  overflow: hidden;
+  position: relative;
+}
+
+.contenido-btn-vermas {
+  width: 100%;
+  padding: 2.5em;
+  position: absolute;
+  color: #ffffff;
+  font-family: monospace;
+  font-size: 1.251em;
+  background: rgba(255, 255, 255, 0.15);
+  color: #ffffff;
+  transition: 0.4s all ease;
+  transform: translateY(116%);
+}
+.contenido-btn-vermas h2 {
+  font-size: 1.8em;
+  margin: 5px;
+  text-shadow: 2px 4px 1px #000000;
+}
+.contenido-btn-vermas h3 {
+  margin: 5px;
+  text-shadow: 2px 2px 1px #000000;
+}
+
+.transform-contenidovermas {
+  transform: translateY(0%);
+}
+
 .display-none {
   display: none;
+}
+
+.seccion-tres {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  width: 100%;
+  align-items: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 400px;
+  color: #ffffff;
+  text-align: center;
+}
+
+.contenedor-seccion-tres {
+  height: 100%;
+  display: flex;
+  align-items: start;
+  padding: 1em;
+  background-image: url(https://images.pexels.com/photos/210095/pexels-photo-210095.jpeg?auto=compress&cs=tinysrgb&w=1600);
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+.contenedor-seccion-tres h3 {
+  font-family: monospace;
+  font-weight: 800;
+  font-size: 2.5em;
 }
 
 .footer {
   height: 200px;
   width: 100%;
-  background: linear-gradient(to bottom, #ffffff, #000000);
+  background: #000000;
 }
 
 /*# sourceMappingURL=main.css.map */
