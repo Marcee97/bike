@@ -21,7 +21,10 @@ box-shadow:  $eje $eje ($eje*2) #bebebe,
     transition: .3s all ease;
     border-radius: 7px;
     margin: 3px;
-
+    @media(min-width:1000px){
+        height: 8em;
+      
+    }
     &:hover{
         transform: scale(1.02);
     }

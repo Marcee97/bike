@@ -249,8 +249,9 @@
   display: flex;
   justify-content: center;
   margin-top: 5px;
-  background: linear-gradient(to bottom, #ffffff, #000000, #000000);
+  background: linear-gradient(to bottom, #381919, #000000, #381919, #000000);
   margin-top: 0;
+  padding: 0.5em;
 }
 
 .contenedor-botones {
@@ -258,7 +259,9 @@
   flex-direction: column;
   width: 100%;
   justify-content: start;
+  align-items: center;
   margin-top: 3.3em;
+  gap: 0.5em;
 }
 
 .boton-mtb {
@@ -278,6 +281,11 @@
   border-radius: 7px;
   margin: 3px;
   background-image: url(https://venzoargentina.com.ar/wp-content/uploads/2020/09/mtb.jpg?id=1699);
+}
+@media (min-width: 1000px) {
+  .boton-mtb {
+    height: 8em;
+  }
 }
 .boton-mtb:hover {
   transform: scale(1.02);
@@ -299,7 +307,12 @@
   transition: 0.3s all ease;
   border-radius: 7px;
   margin: 3px;
-  background-image: url(https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRRln9YZ1gfyNijLy2qWAYvkLif8qJ1OxIbfw&usqp=CAU);
+  background-image: url(https://images.pexels.com/photos/248547/pexels-photo-248547.jpeg?auto=compress&cs=tinysrgb&w=1600);
+}
+@media (min-width: 1000px) {
+  .boton-niños {
+    height: 8em;
+  }
 }
 .boton-niños:hover {
   transform: scale(1.02);
@@ -323,6 +336,11 @@
   margin: 3px;
   background-image: url(https://images.pexels.com/photos/5465176/pexels-photo-5465176.jpeg?auto=compress&cs=tinysrgb&w=1600);
 }
+@media (min-width: 1000px) {
+  .boton-accesorios {
+    height: 8em;
+  }
+}
 .boton-accesorios:hover {
   transform: scale(1.02);
 }
@@ -337,7 +355,6 @@
   z-index: 0;
   color: #fff;
 }
-
 .cortina-negra {
   width: 100%;
   height: 100%;
@@ -372,6 +389,13 @@
   color: #fff;
   padding: 0.7em;
 }
+@media (min-width: 1000px) {
+  .contenedor-segunda-seccion button {
+    width: 6em;
+    height: 4em;
+    font-size: 1.5em;
+  }
+}
 .contenedor-segunda-seccion button:hover {
   background: rgba(255, 255, 255, 0.27);
 }
@@ -383,6 +407,11 @@
   align-items: center;
   overflow: hidden;
   position: relative;
+}
+@media (min-width: 1000px) {
+  .detalles-bici-venzo {
+    width: 60%;
+  }
 }
 
 .contenido-btn-vermas {
@@ -396,6 +425,26 @@
   color: #ffffff;
   transition: 0.4s all ease;
   transform: translateY(116%);
+}
+@media (min-width: 411px) {
+  .contenido-btn-vermas {
+    transform: translateY(156%);
+  }
+}
+@media (min-width: 571px) {
+  .contenido-btn-vermas {
+    transform: translateY(216%);
+  }
+}
+@media (min-width: 703px) {
+  .contenido-btn-vermas {
+    transform: translateY(280%);
+  }
+}
+@media (min-width: 930px) {
+  .contenido-btn-vermas {
+    transform: translateY(390%);
+  }
 }
 .contenido-btn-vermas h2 {
   font-size: 1.8em;
@@ -429,10 +478,12 @@
 }
 
 .contenedor-seccion-tres {
-  height: 100%;
   display: flex;
-  align-items: start;
-  padding: 1em;
+  height: 100%;
+  width: 100%;
+  align-items: center;
+  justify-content: center;
+  position: relative;
   background-image: url(https://images.pexels.com/photos/210095/pexels-photo-210095.jpeg?auto=compress&cs=tinysrgb&w=1600);
   background-repeat: no-repeat;
   background-size: cover;
@@ -441,6 +492,13 @@
   font-family: monospace;
   font-weight: 800;
   font-size: 2.5em;
+  z-index: 21;
+}
+.contenedor-seccion-tres p {
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(to bottom, rgb(0, 0, 0), rgba(0, 0, 0, 0.342), rgba(255, 255, 255, 0.267));
+  position: absolute;
 }
 
 .footer {
